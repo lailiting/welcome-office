@@ -1,0 +1,16 @@
+package cn.homyit.website.entity.DO;
+
+
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.Data;
+
+@Data
+@TableName(value="project")
+public class Project extends Model<Project> {
+    @TableId(value="id")
+    private Integer id;
+    private String desc;
+    private String type;
+}
